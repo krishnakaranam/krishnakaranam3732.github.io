@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>feed page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=PT+Sans'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+  <link rel="stylesheet" href="css/styleFeed.css">
+
+</head>
+<body>
+
+  <div class='container'>
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+	  <span></br></br></span>
+      <a href="#">Filters</a>
+	  <a href="myreach.html">Reach</a>
+      <a href="profile.html">Profile</a>
+      <a href="#">Logout</a>
+    </div>
+    <div class='card'>
+      <div class="add-btn"><a class="fa fa-arrow-right" href="#" onclick="openSlideMenu()"></a></div>
+     
+	  <div class="filter">
+        <select id='filters'>
+			<option value="volvo">Filter</option>
+			<option value="saab">project1</option>
+			<option value="mercedes">project2</option>
+			<option value="audi">project3</option>
+		</select>
+      </div>
+	  
+	  <div class="sort">
+        <select id='sorts'>
+			<option value="volvo">Sort</option>
+			<option value="saab">likes</option>
+			<option value="mercedes">shares</option>
+			<option value="audi">re-tweets</option>
+		</select>
+      </div>
+	  
+	  <div class="feedheading">
+          <h5>Feed</h5>
+      </div>
+	  
+	  <div class="search">
+          <input type="text" placeholder="Search..">
+      </div>
+	 
+      <div class="post" id="writepost">
+        <div class="avatar"><img src="http://www.fillmurray.com/30/30"/></div>
+        <div class="name">
+          <h5>Brenna Sorkin</h5>
+        </div>
+        
+		    <a href="#" class="btn-close" id="closepost" onclick="closeWritePost()">&times;</a>
+        <hr>
+        <div class="write">
+          <textarea id="textpost" class="write-post" rows="2" cols="38" placeholder="  Write post here ..." onclick="openWritePost()"></textarea>
+        </div>
+        <div class="attach">
+          <span id='attachment'><i class="fa fa-paperclip"></i></span>
+        </div>
+        <hr id="blackline">
+		    <div class="share" id="shpost">
+          <h6>share post to:</h6>
+        </div>
+		    <div class="fb" id="fbicon">
+          <a class="fa fa-facebook-square" href="#"></a>
+        </div>
+        <div class="twit" id="twiticon">
+          <a class="fa fa-twitter-square" href="#"></a>
+        </div>
+        <div class="facebookcheck" id="facecheck">
+        Facebook: <input type="checkbox" id="facebookcheck">
+        </div>
+        <div class="twitcheck" id="twitcheck">
+        Twitter: <input type="checkbox" id="twittercheck">
+        </div>
+        <div class="share-btn" id="sharebt">
+            <button class="btn" id="share">share</button>
+        </div> 
+      </div>
+       
+      <div class="feed">
+        <div class="avatar"><img src="http://www.fillmurray.com/30/30"/></div>
+        <div class="name">
+          <h5>Bruce Wayne</h5>
+        </div>
+        <div class="clapcircle">
+          <span id='clapcircle'><i class="fa fa-circle"></i></span>
+        </div>
+		<div class="clapcirclelike">
+          <span id='clapcirclelike'><i class="fa fa-circle"></i></span>
+        </div>
+		<div class="clapcirclelikenum">
+          <span id='clapcirclelikenum'>12</span>
+        </div>
+        <div class="clap">
+          <span id='clap'><i class="fa fa-hand-paper-o" onclick="clap()"></i></span>
+        </div>
+        <hr>
+        <div class="images"><img src="http://www.fillmurray.com/350/350" alt="image" width="336"/></div>
+        <hr class="img">
+        <div class="feedtext" id="feedtext1">
+          <p>Come join us lorem ipsum Come join us lorem ipsum Come join us lorem ipsum Come join us lorem ipsum Come join us lorem ipsum ...</p>
+        </div>
+        <div class="expand">
+          <span id="expand"><i class="fa fa-expand" onclick="enlarge()"></i></span>
+        </div>
+        <hr class="img">
+        <div class="like">
+          <span id='like'><i class="fa fa-thumbs-up" onclick="facebookLike()"></i></span>
+        </div>
+		<div class="likenum">
+          <span id='likenum' >15</span>
+        </div>
+        <div class="share">
+          <span id='share'><i class="fa fa-share" onclick="facebookShare()"></i></span>
+        </div>
+		<div class="sharenum">
+          <span id='sharenum'>8</span>
+        </div>
+        <div class="open">
+          <span id='open'><i class="fa fa-facebook-square"></i></span>
+        </div>
+        <p class="face"> </p>
+        <hr class="facehr">
+        
+        <div class="twitlike">
+          <span id='twitlike'><i class="fa fa-heart" onclick="twitLike()"></i></span>
+        </div>
+		<div class="tweetlikenum">
+          <span id='tweetlikenum'>18</span>
+        </div>
+        <div class="twitshare">
+          <span id='twitshare'><i class="fa fa-retweet" onclick="twitShare()"></i></span>
+        </div>
+		<div class="twitsharenum">
+          <span id='twitsharenum'>7</span>
+        </div>
+        <div class="twitopen">
+          <span id='twitopen'><i class="fa fa-twitter-square"></i></span>
+        </div>
+        
+        <p class="end"> </p>
+      </div>
+
+
+      <div class="feed">
+        <div class="avatar"><img src="http://www.fillmurray.com/30/30"/></div>
+        <div class="name">
+          <h5>Bruce Wayne</h5>
+        </div>
+        <div class="clapcircle">
+          <span id='clapcircle'><i class="fa fa-circle"></i></span>
+        </div>
+		<div class="clapcirclelike">
+          <span id='clapcirclelike'><i class="fa fa-circle"></i></span>
+        </div>
+		<div class="clapcirclelikenum">
+          <span id='clapcirclelikenum2'>29</span>
+        </div>
+        <div class="clap">
+          <span id='clap'><i class="fa fa-hand-paper-o" onclick="clap2()"></i></span>
+        </div>
+        <hr>
+        <div class="images"><img src="http://www.fillmurray.com/350/350" alt="image" width="336"/></div>
+        <hr class="img">
+        <div class="feedtext">
+          <p>Come join us lorem ipsum...</p>
+        </div>
+        <div class="expand">
+          <span id="expand"><i class="fa fa-expand"></i></span>
+        </div>
+        <hr class="img">
+        <div class="like">
+          <span id='like'><i class="fa fa-thumbs-up" onclick="facebookLike2()"></i></span>
+        </div>
+		<div class="likenum">
+          <span id='likenum2'>5</span>
+        </div>
+        <div class="share">
+          <span id='share'><i class="fa fa-share" onclick="facebookShare2()"></i></span>
+        </div>
+		<div class="sharenum">
+          <span id='sharenum2'>2</span>
+        </div>
+        <div class="open">
+          <span id='open'><i class="fa fa-facebook-square"></i></span>
+        </div>
+        <p class="face"> </p>
+        <hr class="facehr">
+        
+        <div class="twitlike">
+          <span id='twitlike'><i class="fa fa-heart" onclick="twitLike2()"></i></span>
+        </div>
+		<div class="tweetlikenum">
+          <span id='tweetlikenum2'>15</span>
+        </div>
+        <div class="twitshare">
+          <span id='twitshare'><i class="fa fa-retweet" onclick="twitShare2()"></i></span>
+        </div>
+		<div class="twitsharenum">
+          <span id='twitsharenum2'>15</span>
+        </div>
+        <div class="twitopen">
+          <span id='twitopen'><i class="fa fa-twitter-square"></i></span>
+        </div>
+        
+        <p class="end"> </p>
+      </div>
+      
+    </div>
+  </div>
+  
+  <script src="js/indexFeed.js"></script>
+
+</body>
+
+</html>
