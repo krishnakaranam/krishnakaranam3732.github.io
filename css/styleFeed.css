@@ -475,11 +475,12 @@ input[type=checkbox] {
 
 .feed .face{
   padding: 12vw 0vw 0vw 0vw;
-  margin-bottom: 4vw;
+  
 }
 
 .feed .end{
   padding: 1.5vw 0vw 0.75vw 0vw;
+  margin-bottom: 5vw;
 }
 
 .feed .endhr{
