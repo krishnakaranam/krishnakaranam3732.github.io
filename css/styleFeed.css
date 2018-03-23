@@ -58,12 +58,6 @@ html {
   z-index:1;
 }
 
-.ref{
-	position: absolute;
-	left: 50vw;
-	top: -4.25vw;
-}
-
 .feedheading {
   position: absolute;
   font-family: 'PT Sans', sans-serif;
