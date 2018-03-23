@@ -12,7 +12,7 @@ function enlarge(){
 	  if(document.getElementById('feedtext1').style.height!='auto'){
       document.getElementById('feedtext1').style.height='auto';
 	  } else {
-	  document.getElementById('feedtext1').style.height='7vh';
+	  document.getElementById('feedtext1').style.height='12vw';
 	  }
 }
 
