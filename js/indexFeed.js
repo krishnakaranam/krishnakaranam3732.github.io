@@ -17,8 +17,9 @@ function enlarge(){
 }
 
 function openWritePost(){
-	  document.getElementById("textpost").rows = "10";
-	  document.getElementById('writepost').style.height='65vh';
+	  document.getElementById("textpost").style.width = '78vw';
+	  document.getElementById('textpost').style.height='20vw';
+	  document.getElementById('writepost').style.height='76vw';
 	  document.getElementById('closepost').style.visibility='visible';
 	  document.getElementById('blackline').style.visibility='visible';
 	  document.getElementById('fbicon').style.visibility='visible';
@@ -30,8 +31,9 @@ function openWritePost(){
 }
 
 function closeWritePost(){
-	  document.getElementById("textpost").rows = "2";
-	  document.getElementById('writepost').style.height='25vh';
+	  document.getElementById("textpost").style.width = '78vw';
+	  document.getElementById('textpost').style.height='10vw';
+	  document.getElementById('writepost').style.height='28vw';
 	  document.getElementById('closepost').style.visibility='hidden';
 	  document.getElementById('blackline').style.visibility='hidden';
 	  document.getElementById('fbicon').style.visibility='hidden';

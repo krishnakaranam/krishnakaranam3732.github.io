@@ -9,8 +9,10 @@ html, body {
 
 hr{
   color:#000000;
-  padding-top: 0%;
-  padding-bottom: 0%;
+  padding-top: 0vw;
+  padding-bottom: 0vw;
+  margin-top: 0vw;
+  margin-bottom: 0vw;
 }
 
 html {
@@ -48,60 +50,79 @@ html {
 .add-btn a {
   position: absolute;
   left: 7vw;
-  top: 6vh;
-  margin-top: -4.5vw;
+  top: 6vw;
   text-decoration: none;
   font-size: 5vw;
   color: #FFF;
   display: block;
+  z-index:1;
+}
+
+.ref{
+	position: absolute;
+	left: 50vw;
+	top: -4.25vw;
 }
 
 .feedheading {
   position: absolute;
   font-family: 'PT Sans', sans-serif;
+  left: 45vw;
+  top: -4.25vw;
   font-size: 6.5vw;
-  margin-top: -4vh;
   padding-bottom: 0%;
   color: #555555;
-  margin-left: 45vw;
 }
 
 .search {
   position: absolute;
+  align-items: center;
   font-family: 'PT Sans', sans-serif;
   font-size: 6.5vw;
-  margin-top: 6.5vh;
-  padding-bottom: 0%;
+  top: 12vw;
   color: #555555;
 }
 
 .search input[type=text] {
 	float: center;
     padding: 1vw;
-	margin-left: 20vw;
-    font-size: 17px;
+	margin-left: 31vw;
+    font-size: 3vw;
 }
 
 .filter {
   position: absolute;
   font-family: 'PT Sans', sans-serif;
   font-size: 6.5vw;
-  margin-top: 0vh;
+  top: 2.5vw;
   padding-bottom: 0%;
   color: #555555;
-  margin-left: 65vw;
+  margin-left: 68vw;
+}
+
+.filter select {
+	float: center;
+    padding: 1vw;
+	margin-left: 0vw;
+    font-size: 3vw;
 }
 
 .sort {
   position: absolute;
   font-family: 'PT Sans', sans-serif;
   font-size: 6.5vw;
-  margin-top: 0vh;
+  top: 2.5vw;
   padding-bottom: 0%;
   color: #555555;
   margin-left: 15vw;
 }
 
+.sort select {
+	float: center;
+    padding: 1vw;
+	margin-left: 0vw;
+    font-size: 3vw;
+}
 
 #closepost{
 	visibility: hidden;
@@ -131,9 +152,67 @@ html {
 	visibility: hidden;
 }
 
+.post{
+  position: relative;
+  width: 90vw;
+  background: #ffffff;
+  margin: 2.5vw auto;
+  margin-bottom: 27vw;
+  top: 22.5vw;
+  border: 0.5vw solid rgba(0,0,0,0.03);
+  box-shadow: 0 1vh 8vw -0.5vh rgba(0,0,0,0.1);
+}
+
+.post .avatar {
+  position: relative;
+  display: inline-block;
+  left: 6.5vw;
+  top: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  transform: translateX(-50%);
+}
+
+.post .avatar img {
+  border-radius: 50%;
+  width: 12vw;
+  height: 12vw;
+  border: 1vw solid #FFF;
+}
+
+.post .name {
+  position: relative;
+  display: inline-block;
+  left: 0vw;
+  top: 0vw;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.post .write-post {
+  margin: 1vw 0vw auto 1vw;
+  width: 78vw;
+  height: 10vw;
+  border: none;
+}
+
+.post .name h5 {
+  font-size: 5vw;
+  margin-top: 0vw;
+  margin-bottom: 2vw; 
+  color: #555555;
+}
+
+.post .attach {
+  position: absolute;
+  font-size: 7vw;
+  margin: -12vw 80vw;
+  font-family: 'PT Sans', sans-serif;
+}
+
 .post .btn-close{
   position: absolute;
-  margin: -10vh 80vw;
+  left: 80vw;
+  margin-top: -4vw;
   font-size: 15vw;
   text-decoration:none;
   color:#444444;
@@ -141,60 +220,62 @@ html {
 
 .post .share {
   position: absolute;
-  margin: -5vh 5vw;
+  margin-top: -10vw;
   font-family: 'PT Sans', sans-serif;
 }
 
 .post .share h6 {
   font-size: 5vw;
+  margin-left: 3vw;
+  margin-bottom: 5vw;
   color: #555555;
 }
 
 .share-btn {
   align-items: center;
+  margin-left: 3vw;
   justify-content: center;
 }
 
 .btn{
   position: absolute;
   text-align: center;
-  padding: 10vw, 15vw;
   border: none;
   border-radius: 35vw;
-  margin-top: 18vh;
   margin-left: 5vw;
+  margin: 30vw auto;
   background: #1729AF;
   font-size: 5vw;
-  font-weight: 500;
+  font-weight: 5;
   color: #cccccc;
 }
 
 .fb {
   position: absolute;
-  margin: 7vh 5vw;
-  font-size: 5vw;
+  margin: 10vw 5vw 2vw 5vw;
+  font-size: 6vw;
+}
+
+.twit {
+  position: absolute;
+  font-size: 6vw;
+  margin: 20vw 5vw 2vw 5vw;
 }
 
 .facebookcheck{
   position: absolute;
-  margin: 7vh 10vw;
+  margin: 10vw 5vw 2vw 12vw;
   font-family: 'PT Sans', sans-serif;
 }
 
 .twitcheck{
   position: absolute;
-  margin: 12vh 10vw;
+  margin: 20vw 5vw 2vw 12vw;
   font-family: 'PT Sans', sans-serif;
 }
 
 input[type=checkbox] {
   transform: scale(1.25);
-}
-
-.twit {
-  position: absolute;
-  font-size: 5vw;
-  margin: 12vh 5vw;
 }
 
 .twit a{
@@ -207,90 +288,44 @@ input[type=checkbox] {
   color: #2169dd;
 }
 
-.post{
-  width: 90vw;
-  height: 25vh;
-  background: #ffffff;
-  margin: 2.5vw auto;
-  margin-top: 15vh;
-  border: 0.5vw solid rgba(0,0,0,0.03);
-  box-shadow: 0 1vh 8vw -0.5vh rgba(0,0,0,0.1);
-}
-
-.post .avatar {
-  position: relative;
-  margin-left: 1vw;
-  margin-top: 1vh;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.post .avatar img {
-  border-radius: 50%;
-  border: 1vw solid #FFF;
-}
-
-.post .name {
-  position: relative;
-  margin-left: 15vw;
-  margin-top: -10vh;
-  padding-bottom: 0%;
-  font-family: 'PT Sans', sans-serif;
-}
-
-.post .write-post {
-  border: none;
-}
-
-.post .name h5 {
-  font-size: 5vw;
-  margin-top: 5vh;
-  padding-bottom: 0%;
-  color: #555555;
-}
-
-.post .attach {
-  position: absolute;
-  font-size: 7vw;
-  margin: -6vh 80vw;
-  font-family: 'PT Sans', sans-serif;
-}
-
 .feed{
+  position: relative;
   width: 90vw;
-  height: auto;
   background: #ffffff;
   margin: 2.5vw auto;
-  margin-top: 2vh;
   border: 0.5vw solid rgba(0,0,0,0.03);
   box-shadow: 0 1vh 8vw -0.5vh rgba(0,0,0,0.1);
 }
 
 .feed .avatar {
   position: relative;
-  margin-left: 1vw;
-  margin-top: 1vh;
-  left: 50%;
+  display: inline-block;
+  left: 6.5vw;
+  top: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
   transform: translateX(-50%);
 }
 
 .feed .avatar img {
   border-radius: 50%;
+  width: 12vw;
+  height: 12vw;
   border: 1vw solid #FFF;
 }
 
 .feed .name {
   position: relative;
-  margin-left: 15vw;
-  margin-top: -10vh;
-  padding-bottom: 0%;
+  display: inline-block;
+  left: 0vw;
+  top: 0vw;
   font-family: 'PT Sans', sans-serif;
 }
 
 .feed .name h5 {
   font-size: 5vw;
-  margin-top: 5vh;
-  padding-bottom: 0%;
+  margin-top: 0vw;
+  margin-bottom: 5vw; 
   color: #555555;
 }
 
@@ -298,7 +333,7 @@ input[type=checkbox] {
   position: absolute;
   font-size:12vw;
   color: #444444;
-  margin: -10vh 75vw;
+  margin: -18vw 75vw;
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -306,7 +341,7 @@ input[type=checkbox] {
   position: absolute;
   font-size:7vw;
   color: #3c16a5;
-  margin: -10vh 82vw;
+  margin: -19vw 82vw;
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -314,7 +349,7 @@ input[type=checkbox] {
   position: absolute;
   font-size:3vw;
   color: #ffffff;
-  margin: -8.5vh 83.5vw;
+  margin: -16.6vw 83.3vw;
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -322,19 +357,27 @@ input[type=checkbox] {
   position: absolute;
   font-size: 8vw;
   color: #ffffff;
-  margin: -9vh 76vw;
+  margin: -15.5vw 76vw;
   font-family: 'PT Sans', sans-serif;
 }
 
 .images{
-  margin: -1.4vh 0vw 0vw 0vw;
-  height: 25vh;
+  margin: 0.01vw 0vw 2.4vw 0vw;
+  width: 89vw;
+  height: 50vw;
   overflow: hidden;
 }
 
+.images img{
+  max-width: 100%;
+  height: auto;
+}
+
 .feedtext{
-  height: 7vh;
-  padding: 0vw 5vw 0vw 0vw;
+  height: 12vw;
+  margin-top: -4vw;
+  margin-bottom: 3vw;
+  padding: 0vw 5vw 0vw 1vw;
   overflow:hidden;
 }
 
@@ -357,85 +400,86 @@ input[type=checkbox] {
   position: absolute;
   font-size: 7vw;
   color: #111111;
-  margin: -6vh 80vw;
+  margin: -10vw 80vw;
 }
 
 .feed .like {
   position: absolute;
   font-size: 7vw;
   color: #2169dd;
-  margin: 1vh 10vw;
+  margin: 1vw 10vw;
 }
 
 .feed .likenum {
   position: absolute;
   font-size: 4vw;
   color: #2169dd;
-  margin: 0.1vh 17vw;
+  margin: 0.1vw 17vw;
 }
 
 .feed .share {
   position: absolute;
   font-size: 7vw;
   color: #2169dd;
-  margin: 1vh 40vw;
+  margin: 1vw 40vw;
 }
 
 .feed .sharenum {
   position: absolute;
   font-size: 4vw;
   color: #2169dd;
-  margin: 0.1vh 47vw;
+  margin: 0.1vw 47vw;
 }
 
 .feed .open {
   position: absolute;
   font-size: 7vw;
   color: #2169dd;
-  margin: 1vh 70vw;
+  margin: 1vw 70vw;
 }
 
 .feed .twitlike {
   position: absolute;
   font-size: 7vw;
   color: #1dace0;
-  margin: 1vh 10vw;
+  margin: 1vw 10vw;
 }
 
 .feed .tweetlikenum {
   position: absolute;
   font-size: 4vw;
   color: #1dace0;
-  margin: 0.1vh 17vw;
+  margin: 0.1vw 17vw;
 }
 
 .feed .twitshare {
   position: absolute;
   font-size: 7vw;
   color: #1dace0;
-  margin: 1vh 40vw;
+  margin: 1vw 40vw;
 }
 
 .feed .twitsharenum {
   position: absolute;
   font-size: 4vw;
   color: #1dace0;
-  margin: 0.1vh 47vw;
+  margin: 0.1vw 47vw;
 }
 
 .feed .twitopen {
   position: absolute;
   font-size: 7vw;
   color: #1dace0;
-  margin: 1vh 70vw;
+  margin: 1vw 70vw;
 }
 
 .feed .face{
   padding: 12vw 0vw 0vw 0vw;
+  margin-bottom: 4vw;
 }
 
 .feed .end{
-  padding: 2vw 0vw 0vw 0vw;
+  padding: 1.5vw 0vw 0.75vw 0vw;
 }
 
 .feed .endhr{
